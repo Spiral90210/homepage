@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Homepage</title>
+    <meta
+      name="description"
+      content="A replacement for your browsers homepage."
+    />
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" />
+    <style>
+      body {
+        font-size: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+        color: #404040;
+      }
+
+      #container {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+      }
+
+      #links {
+        margin-top: 30px;
+      }
+
+      #links li {
+        display: inline-block;
+        list-style: none;
+      }
+
+      #links a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        background-color: #f1f1f1;
+        overflow: hidden;
+      }
+
+      a:focus {
+        outline: 5px auto #5e9ed6;
+      }
+
+      .imgcontainer {
+        width: 200px;
+        height: 100px;
+        border-bottom: 1px solid #c9c9c9;
+        /* align-items: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* placeholder/error text to be clearer */
+        background-color: white;
+        text-shadow: 0px 0px 3px grey;
+      }
+
+      #links img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .card-title {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Homepage</h1>
+      </div>
+
+      <div id="content">
+        <p>This is a replacement for your browsers homepage.</p>
+        <ol id="links">
+          <li>
+            <a href="https://www.theguardian.com/uk">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #052962">
+                  <img alt="preview image" src="./guardian.png" />
+                </div>
+                <div class="card-title"><span>The Guardian</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.bbc.co.uk/news">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #bb1919">
+                  <img alt="preview image" src="./bbcnews.png" />
+                </div>
+                <div class="card-title"><span>BBC News</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://news.ycombinator.com/">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #ff6600">
+                  <img alt="preview image" src="./hackernews.png" />
+                </div>
+                <div class="card-title"><span>Hacker News</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.macrumors.com/">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #c3cae5">
+                  <img alt="preview image" src="./macrumors.webp" />
+                </div>
+                <div class="card-title"><span>MacRumors</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/home">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: white">
+                  <img alt="preview image" src="./twitter.png" />
+                </div>
+                <div class="card-title"><span>Twitter</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://mail.google.com/mail/u/0/#inbox">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: white">
+                  <img alt="preview image" src="./gmail.png" />
+                </div>
+                <div class="card-title"><span>Gmail</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://thetalake.atlassian.net/jira/software/c/projects/INGSVC/boards/23">
+              <div class="card">
+                <!-- <div class="imgcontainer" style="background-color: white">
+                  <img alt="preview image" src="./jira2.png" /> -->
+                <div class="imgcontainer" style="background-color: #0052cc">
+                  <img alt="preview image" src="./jira.png" />
+                </div>
+                <div class="card-title"><span>Jira</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://bitbucket.org/dashboard/overview">
+              <div class="card">
+                <!-- <div class="imgcontainer" style="background-color: white">
+                  <img alt="preview image" src="./bitbucket2.png" /> -->
+                <div class="imgcontainer" style="background-color: #0052cc">
+                  <img alt="preview image" src="./bitbucket.png" />
+                </div>
+                <div class="card-title"><span>Bitbucket</span></div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://thetalake.atlassian.net/wiki/home">
+              <div class="card">
+                <!-- <div class="imgcontainer" style="background-color: white">
+                  <img alt="preview image" src="./confluence2.png" /> -->
+                <div class="imgcontainer" style="background-color: #0052cc">
+                  <img alt="preview image" src="./confluence.png" />
+                </div>
+                <div class="card-title"><span>Confluence</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: white">
+                  <img alt="preview image" src="./github.png" />
+                </div>
+                <div class="card-title"><span>Github</span></div>
+              </div>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
