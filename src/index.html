@@ -27,16 +27,16 @@
         font-size: 1.5em;
       }
 
-      #links {
+      .links {
         margin-top: 30px;
       }
 
-      #links li {
+      .links li {
         display: inline-block;
         list-style: none;
       }
 
-      #links a {
+      .links a {
         text-decoration: none;
         color: inherit;
         display: inline-block;
@@ -49,6 +49,14 @@
         text-align: center;
         background-color: #f1f1f1;
         overflow: hidden;
+      }
+
+      .links img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
       }
 
       a:focus {
@@ -69,14 +77,6 @@
         text-shadow: 0px 0px 3px grey;
       }
 
-      #links img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-        border-radius: 10px;
-      }
-
       .card-title {
         height: 50px;
         display: flex;
@@ -94,7 +94,10 @@
 
       <div id="content">
         <p>This is a replacement for your browsers homepage.</p>
-        <ol id="links">
+
+        <!-- NORMAL LINKS -->
+
+        <ol class="links">
           <li>
             <a href="https://bsky.app/">
               <div class="card">
@@ -215,13 +218,15 @@
             </a>
           </li>
         </ol>
-        <hr />
+
+        <!-- LOCALDEV -->
+         <hr />
         <p>Work links.</p>
-        <ol id="links">
+        <ol class="links">
           <li>
             <a href="https://localhost.dev.thetaocean.com:8080">
               <div class="card">
-                <div class="imgcontainer" style="background-color: #2C9C5C">
+                <div class="imgcontainer" style="background-color: #63d393">
                   <img alt="preview image" src="./thetalake.png" />
                 </div>
                 <div class="card-title"><span>Portal</span></div>
@@ -231,8 +236,8 @@
           <li>
             <a href="https://localhost.dev.thetaocean.com:3000">
               <div class="card">
-                <div class="imgcontainer" style="background-color: black">
-                  <img alt="preview image" src="./thetalake.png" />
+                <div class="imgcontainer" style="background-color: #1c1c1c">
+                  <img alt="preview image" src="./thetalake_logo.png" />
                 </div>
                 <div class="card-title"><span>Portal Backend</span></div>
               </div>
@@ -251,7 +256,7 @@
           <li>
             <a href="http://localhost.dev.thetaocean.com:9325">
               <div class="card">
-                <div class="imgcontainer" style="background-color: #white">
+                <div class="imgcontainer" style="background-color: white">
                   <img alt="preview image" src="./queues.svg" />
                 </div>
                 <div class="card-title"><span>Queues</span></div>
@@ -278,6 +283,180 @@
               </div>
             </a>
           </li>
+        </ol>
+
+        <!-- DATA CENTERS -->
+
+        <hr />
+        <p>Dev/Preview</p>
+        <ol class="links">
+          <li>
+            <a href="https://app-dev1.thetalake.com">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Dev 1</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://app-dev2.thetalake.com">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Dev 2</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://preview1.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Preview 1</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://preview2.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Preview 2</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://preview3.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Preview 3</span></div>
+              </div>
+            </a>
+          </li>
+          </ol>
+
+          <hr/>
+          <p>Prod</p>
+          <ol class="links">
+          <li>
+            <a href="https://useast.thetalake.ai/">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 1 (useast AWS)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://uk.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 2 (uk Azure)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://ca.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 3 (ca)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://anz.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 4 (anz)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://uswest.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 5 (uswest)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://eu.thetalake.ai/">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 6 (eu)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://apac.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 7 (apac)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href=https://jpmc.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 8 (jpmc)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://wf.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 9 (wf Azure)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <li>
+            <a href="https://cn.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod 10 (China Azure)</span></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://gs.thetalake.ai">
+              <div class="card">
+                <div class="imgcontainer" style="background-color: #7ddaa5">
+                  <img alt="preview image" src="./thetalake_logo.png" />
+                </div>
+                <div class="card-title"><span>Prod gs (AWS)</span></div>
+              </div>
+            </a>
+          </li>
+          
         </ol>
       </div>
     </div>
